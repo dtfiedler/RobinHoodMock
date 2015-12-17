@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C4DFC1091C2320E60059B2EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DFC1081C2320E60059B2EB /* AppDelegate.swift */; };
+		C4DFC10B1C2320E60059B2EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DFC10A1C2320E60059B2EB /* ViewController.swift */; };
+		C4DFC10E1C2320E70059B2EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4DFC10C1C2320E70059B2EB /* Main.storyboard */; };
+		C4DFC1111C2320E70059B2EB /* RobinHoodMock.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4DFC10F1C2320E70059B2EB /* RobinHoodMock.xcdatamodeld */; };
+		C4DFC1131C2320E70059B2EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4DFC1121C2320E70059B2EB /* Assets.xcassets */; };
+		C4DFC1161C2320E70059B2EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4DFC1141C2320E70059B2EB /* LaunchScreen.storyboard */; };
+		C4DFC1211C2320E70059B2EB /* RobinHoodMockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DFC1201C2320E70059B2EB /* RobinHoodMockTests.swift */; };
+		C4DFC12C1C2320E70059B2EB /* RobinHoodMockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DFC12B1C2320E70059B2EB /* RobinHoodMockUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C4DFC11D1C2320E70059B2EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4DFC0FD1C2320E60059B2EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4DFC1041C2320E60059B2EB;
+			remoteInfo = RobinHoodMock;
+		};
+		C4DFC1281C2320E70059B2EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4DFC0FD1C2320E60059B2EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4DFC1041C2320E60059B2EB;
+			remoteInfo = RobinHoodMock;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C4DFC1051C2320E60059B2EB /* RobinHoodMock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RobinHoodMock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4DFC1081C2320E60059B2EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C4DFC10A1C2320E60059B2EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C4DFC10D1C2320E70059B2EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C4DFC1101C2320E70059B2EB /* RobinHoodMock.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RobinHoodMock.xcdatamodel; sourceTree = "<group>"; };
+		C4DFC1121C2320E70059B2EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4DFC1151C2320E70059B2EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C4DFC1171C2320E70059B2EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4DFC11C1C2320E70059B2EB /* RobinHoodMockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RobinHoodMockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4DFC1201C2320E70059B2EB /* RobinHoodMockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobinHoodMockTests.swift; sourceTree = "<group>"; };
+		C4DFC1221C2320E70059B2EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4DFC1271C2320E70059B2EB /* RobinHoodMockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RobinHoodMockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4DFC12B1C2320E70059B2EB /* RobinHoodMockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobinHoodMockUITests.swift; sourceTree = "<group>"; };
+		C4DFC12D1C2320E70059B2EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4DFC1021C2320E60059B2EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4DFC1191C2320E70059B2EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4DFC1241C2320E70059B2EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C4DFC0FC1C2320E60059B2EB = {
+			isa = PBXGroup;
+			children = (
+				C4DFC1071C2320E60059B2EB /* RobinHoodMock */,
+				C4DFC11F1C2320E70059B2EB /* RobinHoodMockTests */,
+				C4DFC12A1C2320E70059B2EB /* RobinHoodMockUITests */,
+				C4DFC1061C2320E60059B2EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C4DFC1061C2320E60059B2EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4DFC1051C2320E60059B2EB /* RobinHoodMock.app */,
+				C4DFC11C1C2320E70059B2EB /* RobinHoodMockTests.xctest */,
+				C4DFC1271C2320E70059B2EB /* RobinHoodMockUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4DFC1071C2320E60059B2EB /* RobinHoodMock */ = {
+			isa = PBXGroup;
+			children = (
+				C4DFC1081C2320E60059B2EB /* AppDelegate.swift */,
+				C4DFC10A1C2320E60059B2EB /* ViewController.swift */,
+				C4DFC10C1C2320E70059B2EB /* Main.storyboard */,
+				C4DFC1121C2320E70059B2EB /* Assets.xcassets */,
+				C4DFC1141C2320E70059B2EB /* LaunchScreen.storyboard */,
+				C4DFC1171C2320E70059B2EB /* Info.plist */,
+				C4DFC10F1C2320E70059B2EB /* RobinHoodMock.xcdatamodeld */,
+			);
+			path = RobinHoodMock;
+			sourceTree = "<group>";
+		};
+		C4DFC11F1C2320E70059B2EB /* RobinHoodMockTests */ = {
+			isa = PBXGroup;
+			children = (
+				C4DFC1201C2320E70059B2EB /* RobinHoodMockTests.swift */,
+				C4DFC1221C2320E70059B2EB /* Info.plist */,
+			);
+			path = RobinHoodMockTests;
+			sourceTree = "<group>";
+		};
+		C4DFC12A1C2320E70059B2EB /* RobinHoodMockUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C4DFC12B1C2320E70059B2EB /* RobinHoodMockUITests.swift */,
+				C4DFC12D1C2320E70059B2EB /* Info.plist */,
+			);
+			path = RobinHoodMockUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C4DFC1041C2320E60059B2EB /* RobinHoodMock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4DFC1301C2320E70059B2EB /* Build configuration list for PBXNativeTarget "RobinHoodMock" */;
+			buildPhases = (
+				C4DFC1011C2320E60059B2EB /* Sources */,
+				C4DFC1021C2320E60059B2EB /* Frameworks */,
+				C4DFC1031C2320E60059B2EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RobinHoodMock;
+			productName = RobinHoodMock;
+			productReference = C4DFC1051C2320E60059B2EB /* RobinHoodMock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C4DFC11B1C2320E70059B2EB /* RobinHoodMockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4DFC1331C2320E70059B2EB /* Build configuration list for PBXNativeTarget "RobinHoodMockTests" */;
+			buildPhases = (
+				C4DFC1181C2320E70059B2EB /* Sources */,
+				C4DFC1191C2320E70059B2EB /* Frameworks */,
+				C4DFC11A1C2320E70059B2EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4DFC11E1C2320E70059B2EB /* PBXTargetDependency */,
+			);
+			name = RobinHoodMockTests;
+			productName = RobinHoodMockTests;
+			productReference = C4DFC11C1C2320E70059B2EB /* RobinHoodMockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C4DFC1261C2320E70059B2EB /* RobinHoodMockUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4DFC1361C2320E70059B2EB /* Build configuration list for PBXNativeTarget "RobinHoodMockUITests" */;
+			buildPhases = (
+				C4DFC1231C2320E70059B2EB /* Sources */,
+				C4DFC1241C2320E70059B2EB /* Frameworks */,
+				C4DFC1251C2320E70059B2EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4DFC1291C2320E70059B2EB /* PBXTargetDependency */,
+			);
+			name = RobinHoodMockUITests;
+			productName = RobinHoodMockUITests;
+			productReference = C4DFC1271C2320E70059B2EB /* RobinHoodMockUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4DFC0FD1C2320E60059B2EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = xor;
+				TargetAttributes = {
+					C4DFC1041C2320E60059B2EB = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					C4DFC11B1C2320E70059B2EB = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = C4DFC1041C2320E60059B2EB;
+					};
+					C4DFC1261C2320E70059B2EB = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = C4DFC1041C2320E60059B2EB;
+					};
+				};
+			};
+			buildConfigurationList = C4DFC1001C2320E60059B2EB /* Build configuration list for PBXProject "RobinHoodMock" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C4DFC0FC1C2320E60059B2EB;
+			productRefGroup = C4DFC1061C2320E60059B2EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4DFC1041C2320E60059B2EB /* RobinHoodMock */,
+				C4DFC11B1C2320E70059B2EB /* RobinHoodMockTests */,
+				C4DFC1261C2320E70059B2EB /* RobinHoodMockUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4DFC1031C2320E60059B2EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4DFC1161C2320E70059B2EB /* LaunchScreen.storyboard in Resources */,
+				C4DFC1131C2320E70059B2EB /* Assets.xcassets in Resources */,
+				C4DFC10E1C2320E70059B2EB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4DFC11A1C2320E70059B2EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4DFC1251C2320E70059B2EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4DFC1011C2320E60059B2EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4DFC1111C2320E70059B2EB /* RobinHoodMock.xcdatamodeld in Sources */,
+				C4DFC10B1C2320E60059B2EB /* ViewController.swift in Sources */,
+				C4DFC1091C2320E60059B2EB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4DFC1181C2320E70059B2EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4DFC1211C2320E70059B2EB /* RobinHoodMockTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4DFC1231C2320E70059B2EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4DFC12C1C2320E70059B2EB /* RobinHoodMockUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C4DFC11E1C2320E70059B2EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4DFC1041C2320E60059B2EB /* RobinHoodMock */;
+			targetProxy = C4DFC11D1C2320E70059B2EB /* PBXContainerItemProxy */;
+		};
+		C4DFC1291C2320E70059B2EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4DFC1041C2320E60059B2EB /* RobinHoodMock */;
+			targetProxy = C4DFC1281C2320E70059B2EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C4DFC10C1C2320E70059B2EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4DFC10D1C2320E70059B2EB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C4DFC1141C2320E70059B2EB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4DFC1151C2320E70059B2EB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C4DFC12E1C2320E70059B2EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C4DFC12F1C2320E70059B2EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4DFC1311C2320E70059B2EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RobinHoodMock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xor.RobinHoodMock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C4DFC1321C2320E70059B2EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RobinHoodMock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xor.RobinHoodMock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C4DFC1341C2320E70059B2EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RobinHoodMockTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xor.RobinHoodMockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RobinHoodMock.app/RobinHoodMock";
+			};
+			name = Debug;
+		};
+		C4DFC1351C2320E70059B2EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RobinHoodMockTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xor.RobinHoodMockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RobinHoodMock.app/RobinHoodMock";
+			};
+			name = Release;
+		};
+		C4DFC1371C2320E70059B2EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RobinHoodMockUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xor.RobinHoodMockUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RobinHoodMock;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		C4DFC1381C2320E70059B2EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RobinHoodMockUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xor.RobinHoodMockUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RobinHoodMock;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4DFC1001C2320E60059B2EB /* Build configuration list for PBXProject "RobinHoodMock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4DFC12E1C2320E70059B2EB /* Debug */,
+				C4DFC12F1C2320E70059B2EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4DFC1301C2320E70059B2EB /* Build configuration list for PBXNativeTarget "RobinHoodMock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4DFC1311C2320E70059B2EB /* Debug */,
+				C4DFC1321C2320E70059B2EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C4DFC1331C2320E70059B2EB /* Build configuration list for PBXNativeTarget "RobinHoodMockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4DFC1341C2320E70059B2EB /* Debug */,
+				C4DFC1351C2320E70059B2EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C4DFC1361C2320E70059B2EB /* Build configuration list for PBXNativeTarget "RobinHoodMockUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4DFC1371C2320E70059B2EB /* Debug */,
+				C4DFC1381C2320E70059B2EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C4DFC10F1C2320E70059B2EB /* RobinHoodMock.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C4DFC1101C2320E70059B2EB /* RobinHoodMock.xcdatamodel */,
+			);
+			currentVersion = C4DFC1101C2320E70059B2EB /* RobinHoodMock.xcdatamodel */;
+			path = RobinHoodMock.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C4DFC0FD1C2320E60059B2EB /* Project object */;
+}
