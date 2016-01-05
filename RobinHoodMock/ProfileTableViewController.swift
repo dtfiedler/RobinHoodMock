@@ -12,9 +12,14 @@ class ProfileTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //praciticing git commmit adds
-
+        self.navigationController?.title = "Account"
+        self.navigationController?.navigationBarHidden = false
+        self.navigationController?.navigationBar.translucent = false
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.barStyle = UIBarStyle.Default
+        self.navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
+        self.navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont.systemFontOfSize(18.0, weight: UIFontWeightUltraLight), NSForegroundColorAttributeName: UIColor.blackColor()]
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -31,7 +36,7 @@ class ProfileTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 4
+        return 5
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -42,9 +47,13 @@ class ProfileTableViewController: UITableViewController {
         case 1:
             return 3
         case 2:
+            return 1
+        case 3:
             return 2
+        case 4:
+            return 1
         default:
-            return 0
+            return 1
         }
     }
 
@@ -61,18 +70,39 @@ class ProfileTableViewController: UITableViewController {
             if (indexPath.row == 0){
                 cell.textLabel!.text = "John Smith"
             } else {
-                cell.textLabel!.text = "SSO: 1232467890"
+                cell.textLabel!.text = "1232467890"
             }
             break
         case 1:
-            cell.textLabel!.text = "Section 2"
-            break
-        case 2:
-            cell.textLabel!.text = "Section 3"
+            if (indexPath.row == 0) {
+                cell.textLabel!.text = "Update Email"
+            } else if (indexPath.row == 1){
+                cell.textLabel!.text = "Reset Password"
+            } else {
+                cell.textLabel!.text = "Log Out"
+            }
             break;
+        case 2:
+            if (indexPath.row == 0) {
+                cell.textLabel!.text = "Configure Notifications"
+            } else {
+                 cell.textLabel!.text = "Section 3"
+            }
+            break;
+        case 3:
+            if (indexPath.row == 0) {
+                cell.textLabel!.text = "Help Center"
+            } else {
+                cell.textLabel!.text = "Contact Support"
+            }
+            break;
+        case 4:
+            cell.textLabel!.text = "Touch ID and Pin"
         default:
             break
         }
+        
+        cell.textLabel!.font = UIFont.systemFontOfSize(12, weight: UIFontWeightUltraLight)
 
         
         // Configure the cell...
@@ -80,6 +110,36 @@ class ProfileTableViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let  headerCell = tableView.dequeueReusableCellWithIdentifier("HeaderCell") as! CustomHeaderCell
+        
+        switch (section) {
+        case 0:
+            headerCell.headerLabel.text = "PROFILE";
+            //return sectionHeaderView
+        case 1:
+            headerCell.headerLabel.text = "ACCOUNT SETTINGS";
+            //return sectionHeaderView
+        case 2:
+            headerCell.headerLabel.text = "NOTIFICATION SETTINGS";
+            //return sectionHeaderView
+        case 3:
+            headerCell.headerLabel.text = "SUPPORT";
+            //return sectionHeaderView
+        default:
+            headerCell.headerLabel.text = "SECURITY SETTINGS";
+        }
+        
+        return headerCell
+    }
+    
+    override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 35
+    }
+    
+    override func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 0
+    }
     
     
 
