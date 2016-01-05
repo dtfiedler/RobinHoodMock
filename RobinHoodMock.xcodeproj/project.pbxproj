@@ -10,6 +10,8 @@
 		A53934FB1266A8102AAA3D31 /* Pods_RobinHoodMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C19E90FB54FF0EBAFF41CD42 /* Pods_RobinHoodMock.framework */; };
 		C40D816C1C319C9E00540C42 /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40D816B1C319C9E00540C42 /* GraphViewController.swift */; };
 		C41CE6841C34C64500EB93C3 /* YSSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41CE6831C34C64500EB93C3 /* YSSegmentedControl.swift */; };
+		C4449F281C3C6277006E7876 /* whitebackground.png in Resources */ = {isa = PBXBuildFile; fileRef = C4449F271C3C6277006E7876 /* whitebackground.png */; };
+		C4449F2A1C3C75D1006E7876 /* CustomHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4449F291C3C75D1006E7876 /* CustomHeaderCell.swift */; };
 		C4CB2C841C31BF010002F0BA /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CB2C831C31BF010002F0BA /* ProfileTableViewController.swift */; };
 		C4DFC1091C2320E60059B2EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DFC1081C2320E60059B2EB /* AppDelegate.swift */; };
 		C4DFC10B1C2320E60059B2EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DFC10A1C2320E60059B2EB /* ViewController.swift */; };
@@ -46,6 +48,8 @@
 		C19E90FB54FF0EBAFF41CD42 /* Pods_RobinHoodMock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RobinHoodMock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C40D816B1C319C9E00540C42 /* GraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
 		C41CE6831C34C64500EB93C3 /* YSSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSSegmentedControl.swift; sourceTree = "<group>"; };
+		C4449F271C3C6277006E7876 /* whitebackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whitebackground.png; sourceTree = "<group>"; };
+		C4449F291C3C75D1006E7876 /* CustomHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomHeaderCell.swift; path = ../CustomHeaderCell.swift; sourceTree = "<group>"; };
 		C4CB2C831C31BF010002F0BA /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 		C4DFC1051C2320E60059B2EB /* RobinHoodMock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RobinHoodMock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4DFC1081C2320E60059B2EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -122,11 +126,13 @@
 				C4DFC1081C2320E60059B2EB /* AppDelegate.swift */,
 				C4DFC10A1C2320E60059B2EB /* ViewController.swift */,
 				C4DFC10C1C2320E70059B2EB /* Main.storyboard */,
+				C4449F291C3C75D1006E7876 /* CustomHeaderCell.swift */,
 				C40D816B1C319C9E00540C42 /* GraphViewController.swift */,
 				C4DFC1391C2322830059B2EB /* MainTableViewController.swift */,
 				C4CB2C831C31BF010002F0BA /* ProfileTableViewController.swift */,
 				C4DFC13B1C2324FB0059B2EB /* SystemTableViewCell.swift */,
 				C4DFC1121C2320E70059B2EB /* Assets.xcassets */,
+				C4449F271C3C6277006E7876 /* whitebackground.png */,
 				C4DFC1141C2320E70059B2EB /* LaunchScreen.storyboard */,
 				C4DFC1171C2320E70059B2EB /* Info.plist */,
 				C4DFC10F1C2320E70059B2EB /* RobinHoodMock.xcdatamodeld */,
@@ -279,6 +285,7 @@
 				C4DFC1161C2320E70059B2EB /* LaunchScreen.storyboard in Resources */,
 				C4DFC1131C2320E70059B2EB /* Assets.xcassets in Resources */,
 				C4DFC10E1C2320E70059B2EB /* Main.storyboard in Resources */,
+				C4449F281C3C6277006E7876 /* whitebackground.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4CB2C841C31BF010002F0BA /* ProfileTableViewController.swift in Sources */,
+				C4449F2A1C3C75D1006E7876 /* CustomHeaderCell.swift in Sources */,
 				C4DFC13A1C2322830059B2EB /* MainTableViewController.swift in Sources */,
 				C4DFC1111C2320E70059B2EB /* RobinHoodMock.xcdatamodeld in Sources */,
 				C4DFC13C1C2324FB0059B2EB /* SystemTableViewCell.swift in Sources */,

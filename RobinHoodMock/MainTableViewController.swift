@@ -14,19 +14,23 @@ class MainTableViewController: UITableViewController, UINavigationControllerDele
     var graphView: UIView?;
     
     @IBOutlet var table: UITableView!
-    let turquoise = UIColor(red: 33/255, green: 255/255, blue: 236/255, alpha: 1)
+    let turquoise = UIColor(red: 37/255, green: 217/255, blue: 151/255, alpha: 1)
+    let red = UIColor(red: 242/255, green: 69/255, blue: 53/255, alpha: 1)
     lazy var searchBar:UISearchBar = UISearchBar(frame: CGRectMake(0, 0, 250, 20))
 
-    let data = [4, 6, 8, 10, 12, 11, 8, 6, 9, 14, 12, 7, 5, 3, 2, 1, 1, 2, 4, 5, 8, 9, 10, 5, 6, 4, 3,1.0,2.0,3.0,2.0,0.0,1.0,2.0,3.0,2.0,3.0]
+    let data = [4, 6, 8, 10, 12, 11, 8, 6, 9, 14, 12, 7, 5, 3, 2, 1, 1, 2, 4, 5, 8, 9, 10, 5, 6, 4, 3,1.0,2.0,3.0,2.0,0.0,1.0,2.0,3.0,2.0,3,5,6,3,4,2,5,7,8,11,15,15,16,17,18,15,13,12,14,14,15,17,18,19, 20, 17, 22, 21, 20, 22, 19, 14, 12, 13, 11, 15, 17, 18]
     let machineNames = ["ALLIANCE 776", "MERA09876", "CT08745","ALLIANCE 776", "MERA09876", "CT08745","ALLIANCE 776", "MERA09876", "CT08745", "MERA09876"]
+    var nextTitle: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.LightContent
+        
         let rightBarButton = UIBarButtonItem(barButtonSystemItem: .Search, target: self, action: "profile:")
         let leftBarButton = UIBarButtonItem(image: UIImage(named: "person"), style: .Plain, target: self, action: "profile:")
         
-        searchBar.barStyle = UIBarStyle.BlackTranslucent
+        searchBar.barStyle = UIBarStyle.Default
         searchBar.backgroundColor = UIColor.clearColor()
         searchBar.tintColor = turquoise
         searchBar.delegate = self
@@ -85,30 +89,37 @@ class MainTableViewController: UITableViewController, UINavigationControllerDele
         cell.lineGraph.colorTop = UIColor.clearColor()
         cell.lineGraph.colorBottom = UIColor.clearColor()
         cell.lineGraph.clipsToBounds = true
-        cell.lineGraph.colorLine = turquoise
         cell.lineGraph.animationGraphEntranceTime = 0.5
         
         cell.statLabel.layer.borderColor = turquoise.CGColor
         cell.statLabel.clipsToBounds = true
         cell.statLabel.layer.borderWidth = 2.0
         cell.statLabel.layer.cornerRadius = 8.0
-        
+        cell.backgroundColor = cell.contentView.backgroundColor
         //on selection, keep background color turquoise (layer is unaffected on selection)
         cell.statLabel.backgroundColor = UIColor.clearColor()
-        cell.statLabel.text = "\(change)%"
         
-        if change > 89.9999 {
-            cell.statLabel.layer.borderColor = UIColor.greenColor().CGColor
+        
+        let random = Int(arc4random_uniform(UInt32(100.0)))
+        
+        if random > 60 {
+            let randomValue = Int(arc4random_uniform(UInt32(10)))
+            cell.statLabel.text = "\(Float(100 - randomValue))%"
+            cell.statLabel.layer.borderColor = turquoise.CGColor
             cell.statLabel.clipsToBounds = true
             cell.statLabel.layer.borderWidth = 2.0
             cell.statLabel.layer.cornerRadius = 8.0
-            cell.statLabel.layer.backgroundColor = UIColor.greenColor().CGColor
+            cell.statLabel.layer.backgroundColor = turquoise.CGColor
+            cell.lineGraph.colorLine = turquoise
         } else {
-            cell.statLabel.layer.borderColor = UIColor.redColor().CGColor
+            let randomValue = Int(arc4random_uniform(UInt32(40)))
+            cell.statLabel.text = "\(Float(random + randomValue))%"
+            cell.statLabel.layer.borderColor = UIColor(red: 242/255, green: 69/255, blue: 53/255, alpha: 1).CGColor
             cell.statLabel.clipsToBounds = true
             cell.statLabel.layer.borderWidth = 2.0
             cell.statLabel.layer.cornerRadius = 8.0
-            cell.statLabel.layer.backgroundColor = UIColor.redColor().CGColor
+            cell.statLabel.layer.backgroundColor = UIColor(red: 242/255, green: 69/255, blue: 53/255, alpha: 1).CGColor
+            cell.lineGraph.colorLine = red
         }
 
 
@@ -121,6 +132,7 @@ class MainTableViewController: UITableViewController, UINavigationControllerDele
         let cell = tableView.cellForRowAtIndexPath(indexPath) as! SystemTableViewCell
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main",bundle: nil)
         let imageViewController = mainStoryboard.instantiateViewControllerWithIdentifier("GraphViewController")
+        nextTitle = cell.systemID.text
         graphView = imageViewController.view
         //self.navigationController?.pushViewController(imageViewController, animated: true)
         self.performSegueWithIdentifier("graph", sender: self)
@@ -132,6 +144,7 @@ class MainTableViewController: UITableViewController, UINavigationControllerDele
     }
     
     func lineGraph(graph: BEMSimpleLineGraphView, valueForPointAtIndex index: Int) -> CGFloat {
+        let index = Int(arc4random_uniform(UInt32(data.count)))
         return CGFloat(data[index])
     }
     
@@ -213,11 +226,24 @@ class MainTableViewController: UITableViewController, UINavigationControllerDele
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier != "profile"){
-        let dvc = segue.destinationViewController as! GraphViewController
-        dvc.data = data
+        let dvc = segue.destinationViewController as! UINavigationController
+        let graphViewController = dvc.viewControllers.first as! GraphViewController
+        graphViewController.data = data
         let current: Double = data[data.count - 1]
+        graphViewController.title = nextTitle
         }
     }
 
+    
+    //Changing Status Bar
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        
+        //LightContent
+        return UIStatusBarStyle.LightContent
+        
+        //Default
+        //return UIStatusBarStyle.Default
+        
+    }
 
 }
