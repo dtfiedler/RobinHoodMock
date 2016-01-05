@@ -1,0 +1,701 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		040EB842CB7BC977DD846152721D45A0 /* BEMSimpleLineGraph-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F293FC827B54E25F1329F0026EA7F2 /* BEMSimpleLineGraph-dummy.m */; };
+		04E63065B80518508A32E61126AED47F /* Pods-RobinHoodMock-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2916459C387277EB6A50C7F7C0ADC21F /* Pods-RobinHoodMock-dummy.m */; };
+		0988BF1E00B39F2DD8E546A0CE72F6EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */; };
+		0DA1539DF2A64AEE5C3D7B7FA5A883AB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18F24645AA4D651DFC7B69A3A0833DB /* QuartzCore.framework */; };
+		27072C75CAC3228FB372AF53BA3F19B9 /* BEMCircle.h in Headers */ = {isa = PBXBuildFile; fileRef = F0353D717B1D93AE145A14C74B80C801 /* BEMCircle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		296E453AD165A3259916C9DD032EC38A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */; };
+		2CBDB8D9666CA86F948FBD272884D708 /* Pods-RobinHoodMock-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FFA9BE4FFE5D3DD106FE04A050F307DA /* Pods-RobinHoodMock-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48007B0C9088E248E7E9B5AEB2EA4EBB /* BEMLine.h in Headers */ = {isa = PBXBuildFile; fileRef = FBC76BA6A978E4A719D5A488D4B5E8EE /* BEMLine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		526FA868E7B720981A453383D20E18A3 /* BEMLine.m in Sources */ = {isa = PBXBuildFile; fileRef = F344EBD3B6A58F95D5C6D3A84954DA9B /* BEMLine.m */; };
+		7955541AC235F55C7AEDB61CC775EC59 /* BEMCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1568F68B4CF5F5F48CC754BCD45989F2 /* BEMCircle.m */; };
+		79787FAC35CA2BB8518C83A811AAF008 /* BEMAverageLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 64D4A3F2E14E60450525B49DB973754C /* BEMAverageLine.m */; };
+		7A0A98778C517AECE63DBB7D599958A3 /* HMSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EB15B4570048DB1C380BCEED8EE46B /* HMSegmentedControl.m */; };
+		89E8119EB308787F5A052F01E6E556EF /* BEMSimpleLineGraphView.h in Headers */ = {isa = PBXBuildFile; fileRef = 62B0006CE7380B1E63AA43D1D579FAF7 /* BEMSimpleLineGraphView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F37BF5A31FCE7A8C38C477154137661 /* BEMSimpleLineGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BFE011A401D2BF8856EE0D7DB173155 /* BEMSimpleLineGraphView.m */; };
+		A6E67DEB921E16A09704BFDC8574B179 /* HMSegmentedControl-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CA11CCF0840BD75CC296D164E6836F74 /* HMSegmentedControl-dummy.m */; };
+		B84836F7FC874648BD77A9F291E8E149 /* HMSegmentedControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CEA0134302FF71627DF40EACC463B10 /* HMSegmentedControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB1A5B8FB21DBC206479EA43A2C20CB6 /* BEMPermanentPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F854D5B47C074314F69EEB05C1ACFD2 /* BEMPermanentPopupView.m */; };
+		BC56D9D67D700EDB23CAF47DD6EBC0EA /* HMSegmentedControl-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A1D7EAD4EC16A87474C85C9012BC1C79 /* HMSegmentedControl-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C17E1A25CB6BCBF1ADAFD63AEC03F3EE /* BEMAverageLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A2DCA9A58CCCAC71FB5AE886F299030 /* BEMAverageLine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D22A843064E5C0D27C07565AC0212E3A /* BEMPermanentPopupView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1747AD90414C292D26D3C1D46938F437 /* BEMPermanentPopupView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8C37090B63A70833C8EE6B498C9B51E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */; };
+		E771441625D005A2C0A4B6EA45817E66 /* BEMSimpleLineGraph-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 30CBD8450F2699ED272712D65041CDFE /* BEMSimpleLineGraph-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C6EAA33FEB8D5CE5A6440C21985F000C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71C1DF39EE1271EA1147F993CA1439A0;
+			remoteInfo = HMSegmentedControl;
+		};
+		E1D7BCB77A353196CDE6D24F4A1F448A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78DD729E6F6BE3C1326232CD5DFFFBB7;
+			remoteInfo = BEMSimpleLineGraph;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A2DCA9A58CCCAC71FB5AE886F299030 /* BEMAverageLine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEMAverageLine.h; path = Classes/BEMAverageLine.h; sourceTree = "<group>"; };
+		10AD3D2D28B77A9BF80EECD45F8A441F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10DD1EA2C97B7BA177850B90CD6347BD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1568F68B4CF5F5F48CC754BCD45989F2 /* BEMCircle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BEMCircle.m; path = Classes/BEMCircle.m; sourceTree = "<group>"; };
+		165E15489F577254431A4500285CE06D /* BEMSimpleLineGraph.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BEMSimpleLineGraph.modulemap; sourceTree = "<group>"; };
+		1747AD90414C292D26D3C1D46938F437 /* BEMPermanentPopupView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEMPermanentPopupView.h; path = Classes/BEMPermanentPopupView.h; sourceTree = "<group>"; };
+		258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		2598E81AD799E1724A487B1E8458B43D /* Pods-RobinHoodMock-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RobinHoodMock-acknowledgements.plist"; sourceTree = "<group>"; };
+		27567504F3EACA00F2418CAD12B9AD76 /* HMSegmentedControl.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HMSegmentedControl.xcconfig; sourceTree = "<group>"; };
+		2916459C387277EB6A50C7F7C0ADC21F /* Pods-RobinHoodMock-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RobinHoodMock-dummy.m"; sourceTree = "<group>"; };
+		30CBD8450F2699ED272712D65041CDFE /* BEMSimpleLineGraph-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BEMSimpleLineGraph-umbrella.h"; sourceTree = "<group>"; };
+		38F293FC827B54E25F1329F0026EA7F2 /* BEMSimpleLineGraph-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BEMSimpleLineGraph-dummy.m"; sourceTree = "<group>"; };
+		4F854D5B47C074314F69EEB05C1ACFD2 /* BEMPermanentPopupView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BEMPermanentPopupView.m; path = Classes/BEMPermanentPopupView.m; sourceTree = "<group>"; };
+		55ECF38EFD36F48E3BCBCB13264192F7 /* BEMSimpleLineGraph.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BEMSimpleLineGraph.xcconfig; sourceTree = "<group>"; };
+		62B0006CE7380B1E63AA43D1D579FAF7 /* BEMSimpleLineGraphView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEMSimpleLineGraphView.h; path = Classes/BEMSimpleLineGraphView.h; sourceTree = "<group>"; };
+		637D1CEA20D2E51456A5D66F3D13B315 /* Pods-RobinHoodMock.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RobinHoodMock.modulemap"; sourceTree = "<group>"; };
+		64D4A3F2E14E60450525B49DB973754C /* BEMAverageLine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BEMAverageLine.m; path = Classes/BEMAverageLine.m; sourceTree = "<group>"; };
+		68C642FD932A39980362DDC794DBCAA9 /* BEMSimpleLineGraph.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BEMSimpleLineGraph.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		754B1AC007AA16880836259932D4E755 /* Pods-RobinHoodMock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RobinHoodMock.release.xcconfig"; sourceTree = "<group>"; };
+		7B5BD4BEE14CBB5A5CF0C762E60EC1D8 /* HMSegmentedControl-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HMSegmentedControl-prefix.pch"; sourceTree = "<group>"; };
+		7CEA0134302FF71627DF40EACC463B10 /* HMSegmentedControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HMSegmentedControl.h; path = HMSegmentedControl/HMSegmentedControl.h; sourceTree = "<group>"; };
+		80A3965E3114E4E0272CEF28F3703CDE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BFE011A401D2BF8856EE0D7DB173155 /* BEMSimpleLineGraphView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BEMSimpleLineGraphView.m; path = Classes/BEMSimpleLineGraphView.m; sourceTree = "<group>"; };
+		8CB0B9ECF6CEE279DA5DCBD265AAA57A /* HMSegmentedControl.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = HMSegmentedControl.modulemap; sourceTree = "<group>"; };
+		8E647289F9B0386F7F4A3FBCCFB80379 /* Pods-RobinHoodMock-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RobinHoodMock-resources.sh"; sourceTree = "<group>"; };
+		A1D7EAD4EC16A87474C85C9012BC1C79 /* HMSegmentedControl-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HMSegmentedControl-umbrella.h"; sourceTree = "<group>"; };
+		AA6835401653818065185591686247A5 /* Pods-RobinHoodMock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RobinHoodMock.debug.xcconfig"; sourceTree = "<group>"; };
+		B18F24645AA4D651DFC7B69A3A0833DB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CA11CCF0840BD75CC296D164E6836F74 /* HMSegmentedControl-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HMSegmentedControl-dummy.m"; sourceTree = "<group>"; };
+		CF43030BC40F252ABA29639500CB96ED /* BEMSimpleLineGraph-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BEMSimpleLineGraph-prefix.pch"; sourceTree = "<group>"; };
+		CF5B40D80F20AB1490DD9A39790A4D6E /* Pods-RobinHoodMock-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RobinHoodMock-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E3F2F1886BC179ED4ED1AD1CF930705E /* Pods_RobinHoodMock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RobinHoodMock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF43A9BE287A5447556B0B1DADB5DF10 /* Pods-RobinHoodMock-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RobinHoodMock-frameworks.sh"; sourceTree = "<group>"; };
+		F0353D717B1D93AE145A14C74B80C801 /* BEMCircle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEMCircle.h; path = Classes/BEMCircle.h; sourceTree = "<group>"; };
+		F344EBD3B6A58F95D5C6D3A84954DA9B /* BEMLine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BEMLine.m; path = Classes/BEMLine.m; sourceTree = "<group>"; };
+		F4EB15B4570048DB1C380BCEED8EE46B /* HMSegmentedControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HMSegmentedControl.m; path = HMSegmentedControl/HMSegmentedControl.m; sourceTree = "<group>"; };
+		FB10BE5BD1DD43D88EF3F1651965BEF0 /* HMSegmentedControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HMSegmentedControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBC76BA6A978E4A719D5A488D4B5E8EE /* BEMLine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEMLine.h; path = Classes/BEMLine.h; sourceTree = "<group>"; };
+		FFA9BE4FFE5D3DD106FE04A050F307DA /* Pods-RobinHoodMock-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RobinHoodMock-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A4B277C82EBC690A0B672A40010916E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8C37090B63A70833C8EE6B498C9B51E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		402E8A33F4F3DC539B674E06E84144BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0988BF1E00B39F2DD8E546A0CE72F6EB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1B5E2E3E557858248F706F58B80B23F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				296E453AD165A3259916C9DD032EC38A /* Foundation.framework in Frameworks */,
+				0DA1539DF2A64AEE5C3D7B7FA5A883AB /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11503D9DFAD2B52E1AC229CBE51A1032 /* BEMSimpleLineGraph */ = {
+			isa = PBXGroup;
+			children = (
+				0A2DCA9A58CCCAC71FB5AE886F299030 /* BEMAverageLine.h */,
+				64D4A3F2E14E60450525B49DB973754C /* BEMAverageLine.m */,
+				F0353D717B1D93AE145A14C74B80C801 /* BEMCircle.h */,
+				1568F68B4CF5F5F48CC754BCD45989F2 /* BEMCircle.m */,
+				FBC76BA6A978E4A719D5A488D4B5E8EE /* BEMLine.h */,
+				F344EBD3B6A58F95D5C6D3A84954DA9B /* BEMLine.m */,
+				1747AD90414C292D26D3C1D46938F437 /* BEMPermanentPopupView.h */,
+				4F854D5B47C074314F69EEB05C1ACFD2 /* BEMPermanentPopupView.m */,
+				62B0006CE7380B1E63AA43D1D579FAF7 /* BEMSimpleLineGraphView.h */,
+				8BFE011A401D2BF8856EE0D7DB173155 /* BEMSimpleLineGraphView.m */,
+				96CE6874C95F860671CD0EAB54B2AC95 /* Support Files */,
+			);
+			path = BEMSimpleLineGraph;
+			sourceTree = "<group>";
+		};
+		3926C638AD0708942C88C2BC89261735 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */,
+				B18F24645AA4D651DFC7B69A3A0833DB /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		3F4C7E16FD8B66B8386C33A8E035C68E /* HMSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				7CEA0134302FF71627DF40EACC463B10 /* HMSegmentedControl.h */,
+				F4EB15B4570048DB1C380BCEED8EE46B /* HMSegmentedControl.m */,
+				5459CCA4DD082B6D09E189805EC3C881 /* Support Files */,
+			);
+			path = HMSegmentedControl;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3926C638AD0708942C88C2BC89261735 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5459CCA4DD082B6D09E189805EC3C881 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8CB0B9ECF6CEE279DA5DCBD265AAA57A /* HMSegmentedControl.modulemap */,
+				27567504F3EACA00F2418CAD12B9AD76 /* HMSegmentedControl.xcconfig */,
+				CA11CCF0840BD75CC296D164E6836F74 /* HMSegmentedControl-dummy.m */,
+				7B5BD4BEE14CBB5A5CF0C762E60EC1D8 /* HMSegmentedControl-prefix.pch */,
+				A1D7EAD4EC16A87474C85C9012BC1C79 /* HMSegmentedControl-umbrella.h */,
+				80A3965E3114E4E0272CEF28F3703CDE /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/HMSegmentedControl";
+			sourceTree = "<group>";
+		};
+		6A5A457A541135711662E3E53E93A648 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68C642FD932A39980362DDC794DBCAA9 /* BEMSimpleLineGraph.framework */,
+				FB10BE5BD1DD43D88EF3F1651965BEF0 /* HMSegmentedControl.framework */,
+				E3F2F1886BC179ED4ED1AD1CF930705E /* Pods_RobinHoodMock.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		78009CFDD012E67C283160588269E0DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				11503D9DFAD2B52E1AC229CBE51A1032 /* BEMSimpleLineGraph */,
+				3F4C7E16FD8B66B8386C33A8E035C68E /* HMSegmentedControl */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				78009CFDD012E67C283160588269E0DD /* Pods */,
+				6A5A457A541135711662E3E53E93A648 /* Products */,
+				E6A1377775A48E29547DAAECCD125F29 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		96CE6874C95F860671CD0EAB54B2AC95 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				165E15489F577254431A4500285CE06D /* BEMSimpleLineGraph.modulemap */,
+				55ECF38EFD36F48E3BCBCB13264192F7 /* BEMSimpleLineGraph.xcconfig */,
+				38F293FC827B54E25F1329F0026EA7F2 /* BEMSimpleLineGraph-dummy.m */,
+				CF43030BC40F252ABA29639500CB96ED /* BEMSimpleLineGraph-prefix.pch */,
+				30CBD8450F2699ED272712D65041CDFE /* BEMSimpleLineGraph-umbrella.h */,
+				10AD3D2D28B77A9BF80EECD45F8A441F /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BEMSimpleLineGraph";
+			sourceTree = "<group>";
+		};
+		A3D3C9C0EE86969916CB2B922CA06062 /* Pods-RobinHoodMock */ = {
+			isa = PBXGroup;
+			children = (
+				10DD1EA2C97B7BA177850B90CD6347BD /* Info.plist */,
+				637D1CEA20D2E51456A5D66F3D13B315 /* Pods-RobinHoodMock.modulemap */,
+				CF5B40D80F20AB1490DD9A39790A4D6E /* Pods-RobinHoodMock-acknowledgements.markdown */,
+				2598E81AD799E1724A487B1E8458B43D /* Pods-RobinHoodMock-acknowledgements.plist */,
+				2916459C387277EB6A50C7F7C0ADC21F /* Pods-RobinHoodMock-dummy.m */,
+				EF43A9BE287A5447556B0B1DADB5DF10 /* Pods-RobinHoodMock-frameworks.sh */,
+				8E647289F9B0386F7F4A3FBCCFB80379 /* Pods-RobinHoodMock-resources.sh */,
+				FFA9BE4FFE5D3DD106FE04A050F307DA /* Pods-RobinHoodMock-umbrella.h */,
+				AA6835401653818065185591686247A5 /* Pods-RobinHoodMock.debug.xcconfig */,
+				754B1AC007AA16880836259932D4E755 /* Pods-RobinHoodMock.release.xcconfig */,
+			);
+			name = "Pods-RobinHoodMock";
+			path = "Target Support Files/Pods-RobinHoodMock";
+			sourceTree = "<group>";
+		};
+		E6A1377775A48E29547DAAECCD125F29 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A3D3C9C0EE86969916CB2B922CA06062 /* Pods-RobinHoodMock */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		48ECC7F1E9A41C6A27B54B366EC5019A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC56D9D67D700EDB23CAF47DD6EBC0EA /* HMSegmentedControl-umbrella.h in Headers */,
+				B84836F7FC874648BD77A9F291E8E149 /* HMSegmentedControl.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9917C20A40320A23F36E2F8E72B1CD97 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C17E1A25CB6BCBF1ADAFD63AEC03F3EE /* BEMAverageLine.h in Headers */,
+				27072C75CAC3228FB372AF53BA3F19B9 /* BEMCircle.h in Headers */,
+				48007B0C9088E248E7E9B5AEB2EA4EBB /* BEMLine.h in Headers */,
+				D22A843064E5C0D27C07565AC0212E3A /* BEMPermanentPopupView.h in Headers */,
+				E771441625D005A2C0A4B6EA45817E66 /* BEMSimpleLineGraph-umbrella.h in Headers */,
+				89E8119EB308787F5A052F01E6E556EF /* BEMSimpleLineGraphView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1271518E3719AB3FFBD3C739855C0B5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CBDB8D9666CA86F948FBD272884D708 /* Pods-RobinHoodMock-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		22DE7C11FCBD708AA69F8E6E1C895440 /* Pods-RobinHoodMock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84C5E2B8D1D420E660D359D8D0B84B70 /* Build configuration list for PBXNativeTarget "Pods-RobinHoodMock" */;
+			buildPhases = (
+				1A06C8366F70CFC5065128C8EF00C613 /* Sources */,
+				3A4B277C82EBC690A0B672A40010916E /* Frameworks */,
+				D1271518E3719AB3FFBD3C739855C0B5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C10DB59D6450C9F7E9938ED054611DB2 /* PBXTargetDependency */,
+				DADC70C498482E4297FCDBD16BF1672E /* PBXTargetDependency */,
+			);
+			name = "Pods-RobinHoodMock";
+			productName = "Pods-RobinHoodMock";
+			productReference = E3F2F1886BC179ED4ED1AD1CF930705E /* Pods_RobinHoodMock.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		71C1DF39EE1271EA1147F993CA1439A0 /* HMSegmentedControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 065AA8D5905013510AF2B2D77D72E8DF /* Build configuration list for PBXNativeTarget "HMSegmentedControl" */;
+			buildPhases = (
+				5BCFC5EFDA7D1F36A32EEF0F1BDD6A75 /* Sources */,
+				F1B5E2E3E557858248F706F58B80B23F /* Frameworks */,
+				48ECC7F1E9A41C6A27B54B366EC5019A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HMSegmentedControl;
+			productName = HMSegmentedControl;
+			productReference = FB10BE5BD1DD43D88EF3F1651965BEF0 /* HMSegmentedControl.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		78DD729E6F6BE3C1326232CD5DFFFBB7 /* BEMSimpleLineGraph */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5974C3409BB469D8D46DB08D72DFCC29 /* Build configuration list for PBXNativeTarget "BEMSimpleLineGraph" */;
+			buildPhases = (
+				0A54FF3F8444C9DB312F17178CC8F779 /* Sources */,
+				402E8A33F4F3DC539B674E06E84144BC /* Frameworks */,
+				9917C20A40320A23F36E2F8E72B1CD97 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BEMSimpleLineGraph;
+			productName = BEMSimpleLineGraph;
+			productReference = 68C642FD932A39980362DDC794DBCAA9 /* BEMSimpleLineGraph.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 6A5A457A541135711662E3E53E93A648 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				78DD729E6F6BE3C1326232CD5DFFFBB7 /* BEMSimpleLineGraph */,
+				71C1DF39EE1271EA1147F993CA1439A0 /* HMSegmentedControl */,
+				22DE7C11FCBD708AA69F8E6E1C895440 /* Pods-RobinHoodMock */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A54FF3F8444C9DB312F17178CC8F779 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79787FAC35CA2BB8518C83A811AAF008 /* BEMAverageLine.m in Sources */,
+				7955541AC235F55C7AEDB61CC775EC59 /* BEMCircle.m in Sources */,
+				526FA868E7B720981A453383D20E18A3 /* BEMLine.m in Sources */,
+				BB1A5B8FB21DBC206479EA43A2C20CB6 /* BEMPermanentPopupView.m in Sources */,
+				040EB842CB7BC977DD846152721D45A0 /* BEMSimpleLineGraph-dummy.m in Sources */,
+				9F37BF5A31FCE7A8C38C477154137661 /* BEMSimpleLineGraphView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A06C8366F70CFC5065128C8EF00C613 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E63065B80518508A32E61126AED47F /* Pods-RobinHoodMock-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BCFC5EFDA7D1F36A32EEF0F1BDD6A75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6E67DEB921E16A09704BFDC8574B179 /* HMSegmentedControl-dummy.m in Sources */,
+				7A0A98778C517AECE63DBB7D599958A3 /* HMSegmentedControl.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C10DB59D6450C9F7E9938ED054611DB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BEMSimpleLineGraph;
+			target = 78DD729E6F6BE3C1326232CD5DFFFBB7 /* BEMSimpleLineGraph */;
+			targetProxy = E1D7BCB77A353196CDE6D24F4A1F448A /* PBXContainerItemProxy */;
+		};
+		DADC70C498482E4297FCDBD16BF1672E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HMSegmentedControl;
+			target = 71C1DF39EE1271EA1147F993CA1439A0 /* HMSegmentedControl */;
+			targetProxy = C6EAA33FEB8D5CE5A6440C21985F000C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		313756F81235546D33107463A33C20C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55ECF38EFD36F48E3BCBCB13264192F7 /* BEMSimpleLineGraph.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BEMSimpleLineGraph/BEMSimpleLineGraph-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BEMSimpleLineGraph/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BEMSimpleLineGraph/BEMSimpleLineGraph.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = BEMSimpleLineGraph;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5B166B975B85F70A34AC3A25C3376401 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 754B1AC007AA16880836259932D4E755 /* Pods-RobinHoodMock.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RobinHoodMock/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RobinHoodMock/Pods-RobinHoodMock.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_RobinHoodMock;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6E1B76C7AC6F67B881A6B8E1CB9888D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA6835401653818065185591686247A5 /* Pods-RobinHoodMock.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RobinHoodMock/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RobinHoodMock/Pods-RobinHoodMock.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_RobinHoodMock;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8D1534490D941DCA47C62AC4314182AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		97D51F6666DF1E19E5AF605F869B28D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27567504F3EACA00F2418CAD12B9AD76 /* HMSegmentedControl.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HMSegmentedControl/HMSegmentedControl-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HMSegmentedControl/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HMSegmentedControl/HMSegmentedControl.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = HMSegmentedControl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B837C9970D9FB9E98C6C4023888E1251 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55ECF38EFD36F48E3BCBCB13264192F7 /* BEMSimpleLineGraph.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BEMSimpleLineGraph/BEMSimpleLineGraph-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BEMSimpleLineGraph/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BEMSimpleLineGraph/BEMSimpleLineGraph.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = BEMSimpleLineGraph;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C5A18280E9321A9268D1C80B7DA43967 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E0436EA27C3C577061B9CACE27D95624 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27567504F3EACA00F2418CAD12B9AD76 /* HMSegmentedControl.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HMSegmentedControl/HMSegmentedControl-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HMSegmentedControl/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HMSegmentedControl/HMSegmentedControl.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = HMSegmentedControl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		065AA8D5905013510AF2B2D77D72E8DF /* Build configuration list for PBXNativeTarget "HMSegmentedControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97D51F6666DF1E19E5AF605F869B28D5 /* Debug */,
+				E0436EA27C3C577061B9CACE27D95624 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D1534490D941DCA47C62AC4314182AF /* Debug */,
+				C5A18280E9321A9268D1C80B7DA43967 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5974C3409BB469D8D46DB08D72DFCC29 /* Build configuration list for PBXNativeTarget "BEMSimpleLineGraph" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				313756F81235546D33107463A33C20C6 /* Debug */,
+				B837C9970D9FB9E98C6C4023888E1251 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84C5E2B8D1D420E660D359D8D0B84B70 /* Build configuration list for PBXNativeTarget "Pods-RobinHoodMock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E1B76C7AC6F67B881A6B8E1CB9888D7 /* Debug */,
+				5B166B975B85F70A34AC3A25C3376401 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

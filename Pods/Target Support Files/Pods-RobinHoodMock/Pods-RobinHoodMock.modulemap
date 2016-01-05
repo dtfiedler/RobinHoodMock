@@ -1,0 +1,6 @@
+framework module Pods_RobinHoodMock {
+  umbrella header "Pods-RobinHoodMock-umbrella.h"
+
+  export *
+  module * { export * }
+}
