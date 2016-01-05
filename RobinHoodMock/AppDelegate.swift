@@ -17,6 +17,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+          let turquoise = UIColor(red: 33/255, green: 255/255, blue: 236/255, alpha: 1)
+        
+        UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.LightContent
+        let navBarAppearence = UINavigationBar.appearance()
+        navBarAppearence.backgroundColor = UIColor(red: 59/255, green: 59/255, blue: 63/255, alpha: 1)
+        navBarAppearence.tintColor = turquoise
+        navBarAppearence.barTintColor = UIColor(red: 59/255, green: 59/255, blue: 63/255, alpha: 1)
+            
+            //UIColor(red: 59/255, green: 59/255, blue: 63/255, alpha: 0.9)
         return true
     }
 

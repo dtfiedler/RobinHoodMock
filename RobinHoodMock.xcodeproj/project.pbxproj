@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A53934FB1266A8102AAA3D31 /* Pods_RobinHoodMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C19E90FB54FF0EBAFF41CD42 /* Pods_RobinHoodMock.framework */; };
+		C40D816C1C319C9E00540C42 /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40D816B1C319C9E00540C42 /* GraphViewController.swift */; };
+		C41CE6841C34C64500EB93C3 /* YSSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41CE6831C34C64500EB93C3 /* YSSegmentedControl.swift */; };
+		C4CB2C841C31BF010002F0BA /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CB2C831C31BF010002F0BA /* ProfileTableViewController.swift */; };
 		C4DFC1091C2320E60059B2EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DFC1081C2320E60059B2EB /* AppDelegate.swift */; };
 		C4DFC10B1C2320E60059B2EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DFC10A1C2320E60059B2EB /* ViewController.swift */; };
 		C4DFC10E1C2320E70059B2EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4DFC10C1C2320E70059B2EB /* Main.storyboard */; };
@@ -15,6 +19,8 @@
 		C4DFC1161C2320E70059B2EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4DFC1141C2320E70059B2EB /* LaunchScreen.storyboard */; };
 		C4DFC1211C2320E70059B2EB /* RobinHoodMockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DFC1201C2320E70059B2EB /* RobinHoodMockTests.swift */; };
 		C4DFC12C1C2320E70059B2EB /* RobinHoodMockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DFC12B1C2320E70059B2EB /* RobinHoodMockUITests.swift */; };
+		C4DFC13A1C2322830059B2EB /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DFC1391C2322830059B2EB /* MainTableViewController.swift */; };
+		C4DFC13C1C2324FB0059B2EB /* SystemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DFC13B1C2324FB0059B2EB /* SystemTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E9E0AFEA81541DE162326E0 /* Pods-RobinHoodMock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RobinHoodMock.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RobinHoodMock/Pods-RobinHoodMock.debug.xcconfig"; sourceTree = "<group>"; };
+		1F2245EC247BD10DAED8752D /* Pods-RobinHoodMock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RobinHoodMock.release.xcconfig"; path = "Pods/Target Support Files/Pods-RobinHoodMock/Pods-RobinHoodMock.release.xcconfig"; sourceTree = "<group>"; };
+		C19E90FB54FF0EBAFF41CD42 /* Pods_RobinHoodMock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RobinHoodMock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C40D816B1C319C9E00540C42 /* GraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
+		C41CE6831C34C64500EB93C3 /* YSSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSSegmentedControl.swift; sourceTree = "<group>"; };
+		C4CB2C831C31BF010002F0BA /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 		C4DFC1051C2320E60059B2EB /* RobinHoodMock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RobinHoodMock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4DFC1081C2320E60059B2EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4DFC10A1C2320E60059B2EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +61,9 @@
 		C4DFC1271C2320E70059B2EB /* RobinHoodMockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RobinHoodMockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4DFC12B1C2320E70059B2EB /* RobinHoodMockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobinHoodMockUITests.swift; sourceTree = "<group>"; };
 		C4DFC12D1C2320E70059B2EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4DFC1391C2322830059B2EB /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		C4DFC13B1C2324FB0059B2EB /* SystemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemTableViewCell.swift; sourceTree = "<group>"; };
+		C4DFC13D1C232A830059B2EB /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Header.h; path = ../Header.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A53934FB1266A8102AAA3D31 /* Pods_RobinHoodMock.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +99,8 @@
 				C4DFC11F1C2320E70059B2EB /* RobinHoodMockTests */,
 				C4DFC12A1C2320E70059B2EB /* RobinHoodMockUITests */,
 				C4DFC1061C2320E60059B2EB /* Products */,
+				E4C7FE654A21A625E02DC55E /* Pods */,
+				D96E7D9B79B9D9AE4EC30DE7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +117,15 @@
 		C4DFC1071C2320E60059B2EB /* RobinHoodMock */ = {
 			isa = PBXGroup;
 			children = (
+				C41CE6831C34C64500EB93C3 /* YSSegmentedControl.swift */,
+				C4DFC13D1C232A830059B2EB /* Header.h */,
 				C4DFC1081C2320E60059B2EB /* AppDelegate.swift */,
 				C4DFC10A1C2320E60059B2EB /* ViewController.swift */,
 				C4DFC10C1C2320E70059B2EB /* Main.storyboard */,
+				C40D816B1C319C9E00540C42 /* GraphViewController.swift */,
+				C4DFC1391C2322830059B2EB /* MainTableViewController.swift */,
+				C4CB2C831C31BF010002F0BA /* ProfileTableViewController.swift */,
+				C4DFC13B1C2324FB0059B2EB /* SystemTableViewCell.swift */,
 				C4DFC1121C2320E70059B2EB /* Assets.xcassets */,
 				C4DFC1141C2320E70059B2EB /* LaunchScreen.storyboard */,
 				C4DFC1171C2320E70059B2EB /* Info.plist */,
@@ -128,6 +152,23 @@
 			path = RobinHoodMockUITests;
 			sourceTree = "<group>";
 		};
+		D96E7D9B79B9D9AE4EC30DE7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C19E90FB54FF0EBAFF41CD42 /* Pods_RobinHoodMock.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E4C7FE654A21A625E02DC55E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E9E0AFEA81541DE162326E0 /* Pods-RobinHoodMock.debug.xcconfig */,
+				1F2245EC247BD10DAED8752D /* Pods-RobinHoodMock.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +176,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4DFC1301C2320E70059B2EB /* Build configuration list for PBXNativeTarget "RobinHoodMock" */;
 			buildPhases = (
+				74BD8E51C116C6FFC10F0A09 /* Check Pods Manifest.lock */,
 				C4DFC1011C2320E60059B2EB /* Sources */,
 				C4DFC1021C2320E60059B2EB /* Frameworks */,
 				C4DFC1031C2320E60059B2EB /* Resources */,
+				0A1BEB5CE699A2AFF23488F4 /* Embed Pods Frameworks */,
+				70F592146C30A7BE41B25745 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,12 +298,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A1BEB5CE699A2AFF23488F4 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RobinHoodMock/Pods-RobinHoodMock-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70F592146C30A7BE41B25745 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RobinHoodMock/Pods-RobinHoodMock-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74BD8E51C116C6FFC10F0A09 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C4DFC1011C2320E60059B2EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4CB2C841C31BF010002F0BA /* ProfileTableViewController.swift in Sources */,
+				C4DFC13A1C2322830059B2EB /* MainTableViewController.swift in Sources */,
 				C4DFC1111C2320E70059B2EB /* RobinHoodMock.xcdatamodeld in Sources */,
+				C4DFC13C1C2324FB0059B2EB /* SystemTableViewCell.swift in Sources */,
+				C41CE6841C34C64500EB93C3 /* YSSegmentedControl.swift in Sources */,
+				C40D816C1C319C9E00540C42 /* GraphViewController.swift in Sources */,
 				C4DFC10B1C2320E60059B2EB /* ViewController.swift in Sources */,
 				C4DFC1091C2320E60059B2EB /* AppDelegate.swift in Sources */,
 			);
@@ -356,6 +453,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -394,6 +492,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -401,23 +500,27 @@
 		};
 		C4DFC1311C2320E70059B2EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E9E0AFEA81541DE162326E0 /* Pods-RobinHoodMock.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RobinHoodMock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xor.RobinHoodMock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Header.h;
 			};
 			name = Debug;
 		};
 		C4DFC1321C2320E70059B2EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F2245EC247BD10DAED8752D /* Pods-RobinHoodMock.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RobinHoodMock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xor.RobinHoodMock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Header.h;
 			};
 			name = Release;
 		};
@@ -488,6 +591,7 @@
 				C4DFC1321C2320E70059B2EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C4DFC1331C2320E70059B2EB /* Build configuration list for PBXNativeTarget "RobinHoodMockTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +600,7 @@
 				C4DFC1351C2320E70059B2EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C4DFC1361C2320E70059B2EB /* Build configuration list for PBXNativeTarget "RobinHoodMockUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +609,7 @@
 				C4DFC1381C2320E70059B2EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
