@@ -40,7 +40,7 @@
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="highlightedColor" red="0.23137254900000001" green="0.23137254900000001" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NXX-Jg-Kmw" customClass="BEMSimpleLineGraphView">
+                                        <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="NXX-Jg-Kmw" customClass="BEMSimpleLineGraphView">
                                             <rect key="frame" x="157" y="26" width="340" height="56"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
@@ -92,7 +92,14 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="CCw-rW-Inz"/>
+                    <navigationItem key="navigationItem" id="CCw-rW-Inz">
+                        <barButtonItem key="leftBarButtonItem" image="user" id="q4A-S7-emT">
+                            <connections>
+                                <action selector="profile:" destination="zWS-hm-QiD" id="T1e-wI-hRg"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="R4W-av-Usd"/>
+                    </navigationItem>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="table" destination="auc-J9-gdO" id="dmJ-Qb-SOX"/>
@@ -357,5 +364,6 @@
     </scenes>
     <resources>
         <image name="menu" width="42" height="42"/>
+        <image name="user" width="22" height="22"/>
     </resources>
 </document>

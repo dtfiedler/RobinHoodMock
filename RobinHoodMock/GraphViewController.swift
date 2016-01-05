@@ -60,6 +60,13 @@ class GraphViewController: UIViewController, BEMSimpleLineGraphDelegate, BEMSimp
         self.graphView.enableBottomReferenceAxisFrameLine = false
         self.graphView.enableLeftReferenceAxisFrameLine = false
         self.graphView.enableYAxisLabel = false
+        self.graphView.enableReferenceYAxisLines = true
+        self.graphView.averageLine.enableAverageLine = true
+        self.graphView.averageLine.dashPattern = NSArray(array: [3]) as [AnyObject]
+            
+        self.graphView.averageLine.color = UIColor.lightGrayColor()
+        self.graphView.averageLine.width = 0.5
+        self.graphView.averageLine.alpha = 0.5
         self.graphView.backgroundColor = UIColor.clearColor()
         self.graphView.colorTop = UIColor.clearColor()
         self.graphView.colorBottom = UIColor.clearColor()

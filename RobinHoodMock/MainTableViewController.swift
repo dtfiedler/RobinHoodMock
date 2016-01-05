@@ -26,20 +26,22 @@ class MainTableViewController: UITableViewController, UINavigationControllerDele
         super.viewDidLoad()
         
         //UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.LightContent
-        
-        let rightBarButton = UIBarButtonItem(barButtonSystemItem: .Search, target: self, action: "profile:")
-        let leftBarButton = UIBarButtonItem(image: UIImage(named: "person"), style: .Plain, target: self, action: "profile:")
-        
-        searchBar.barStyle = UIBarStyle.Default
-        searchBar.backgroundColor = UIColor.clearColor()
-        searchBar.tintColor = turquoise
-        searchBar.delegate = self
-        let searchNavBarButton = UIBarButtonItem(customView: searchBar)
-        let space = UIBarButtonItem(barButtonSystemItem: .FlexibleSpace, target: nil, action: nil)
-        searchNavBarButton.tintColor = UIColor.darkGrayColor()
-        self.navigationItem.setLeftBarButtonItems([leftBarButton, space, searchNavBarButton, space, rightBarButton], animated: false)
-        
-        searchBar.placeholder = "Search"
+//        
+//        let rightBarButton = UIBarButtonItem(barButtonSystemItem: .Search, target: self, action: "profile:")
+//        let leftBarButton = UIBarButtonItem(image: UIImage(named: "user"), style: .Plain, target: self, action: "profile:")
+//        
+//        searchBar.barStyle = UIBarStyle.Default
+//        searchBar.backgroundColor = UIColor.clearColor()
+//        searchBar.tintColor = turquoise
+//        searchBar.delegate = self
+//        searchBar.hidden = true
+//        
+//        let searchNavBarButton = UIBarButtonItem(customView: searchBar)
+//        let space = UIBarButtonItem(barButtonSystemItem: .FlexibleSpace, target: nil, action: nil)
+//        searchNavBarButton.tintColor = UIColor.darkGrayColor()
+//        self.navigationItem.setLeftBarButtonItems([leftBarButton, space, searchNavBarButton, space, rightBarButton], animated: false)
+//        
+//        searchBar.placeholder = "Search"
         
         self.tableView.showsHorizontalScrollIndicator = false
         self.tableView.showsVerticalScrollIndicator = false
@@ -89,7 +91,12 @@ class MainTableViewController: UITableViewController, UINavigationControllerDele
         cell.lineGraph.colorTop = UIColor.clearColor()
         cell.lineGraph.colorBottom = UIColor.clearColor()
         cell.lineGraph.clipsToBounds = true
-        cell.lineGraph.animationGraphEntranceTime = 0.5
+        cell.lineGraph.animationGraphStyle = .None
+        cell.lineGraph.averageLine.enableAverageLine = true
+        cell.lineGraph.averageLine.dashPattern = NSArray(array: [3]) as [AnyObject]
+        cell.lineGraph.averageLine.color = UIColor.lightGrayColor()
+        cell.lineGraph.averageLine.width = 0.5
+        cell.lineGraph.averageLine.alpha = 0.5
         
         cell.statLabel.layer.borderColor = turquoise.CGColor
         cell.statLabel.clipsToBounds = true
@@ -156,7 +163,7 @@ class MainTableViewController: UITableViewController, UINavigationControllerDele
         self.searchBar.endEditing(true)
     }
     
-    func profile (sender: UIBarButtonItem){
+    @IBAction func profile (sender: UIBarButtonItem){
         print("button pressed")
         self.performSegueWithIdentifier("profile", sender: self)
     }
