@@ -34,12 +34,6 @@
                                             <color key="textColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DfP-Wf-uuW">
-                                            <rect key="frame" x="520" y="26" width="57" height="37"/>
-                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="highlightedColor" red="0.23137254900000001" green="0.23137254900000001" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
-                                        </label>
                                         <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="NXX-Jg-Kmw" customClass="BEMSimpleLineGraphView">
                                             <rect key="frame" x="157" y="26" width="340" height="56"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -54,21 +48,27 @@
                                             <color key="textColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="highlightedColor" red="0.23137254900000001" green="0.23137254900000001" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DfP-Wf-uuW">
+                                            <rect key="frame" x="512" y="30" width="72" height="30"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="highlightedColor" red="0.23137254900000001" green="0.23137254900000001" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstItem="Q3o-qM-HWU" firstAttribute="leading" secondItem="y4K-YC-XEc" secondAttribute="leading" id="0Bb-f9-ehO"/>
-                                        <constraint firstItem="DfP-Wf-uuW" firstAttribute="trailing" secondItem="Qfv-iw-b32" secondAttribute="trailingMargin" constant="-15" id="1YR-AJ-YqT"/>
+                                        <constraint firstItem="DfP-Wf-uuW" firstAttribute="trailing" secondItem="Qfv-iw-b32" secondAttribute="trailingMargin" constant="-8" id="1YR-AJ-YqT"/>
                                         <constraint firstItem="Q3o-qM-HWU" firstAttribute="top" secondItem="Qfv-iw-b32" secondAttribute="topMargin" constant="40" id="2ge-xP-q8A"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="NXX-Jg-Kmw" secondAttribute="bottom" id="QTk-An-Got"/>
-                                        <constraint firstItem="DfP-Wf-uuW" firstAttribute="leading" secondItem="NXX-Jg-Kmw" secondAttribute="trailing" constant="23" id="SpE-Su-Akj"/>
+                                        <constraint firstItem="DfP-Wf-uuW" firstAttribute="leading" secondItem="NXX-Jg-Kmw" secondAttribute="trailing" constant="15" id="SpE-Su-Akj"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="Q3o-qM-HWU" secondAttribute="bottom" constant="11.5" id="U9u-UW-4Oq"/>
                                         <constraint firstItem="Q3o-qM-HWU" firstAttribute="trailing" secondItem="y4K-YC-XEc" secondAttribute="trailing" id="a6K-dy-Zpq"/>
                                         <constraint firstItem="y4K-YC-XEc" firstAttribute="top" secondItem="Qfv-iw-b32" secondAttribute="topMargin" constant="18" id="aOh-fJ-ife"/>
                                         <constraint firstItem="NXX-Jg-Kmw" firstAttribute="leading" secondItem="Qfv-iw-b32" secondAttribute="leadingMargin" constant="149" id="cQw-AR-mW0"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="y4K-YC-XEc" secondAttribute="bottom" constant="30.5" id="iiJ-Rj-fs0"/>
-                                        <constraint firstItem="DfP-Wf-uuW" firstAttribute="top" secondItem="Qfv-iw-b32" secondAttribute="topMargin" constant="18" id="ijw-xd-ySw"/>
+                                        <constraint firstItem="DfP-Wf-uuW" firstAttribute="top" secondItem="Qfv-iw-b32" secondAttribute="topMargin" constant="22" id="ijw-xd-ySw"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="NXX-Jg-Kmw" secondAttribute="trailing" constant="95" id="jzW-If-q5d"/>
                                         <constraint firstItem="y4K-YC-XEc" firstAttribute="leading" secondItem="Qfv-iw-b32" secondAttribute="leadingMargin" constant="11" id="mHW-5c-iPI"/>
                                         <constraint firstItem="NXX-Jg-Kmw" firstAttribute="top" secondItem="Qfv-iw-b32" secondAttribute="topMargin" constant="18" id="mbi-Ax-iH6"/>

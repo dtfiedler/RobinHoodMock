@@ -9,6 +9,7 @@
 import UIKit
 import BEMSimpleLineGraph
 
+
 class MainTableViewController: UITableViewController, UINavigationControllerDelegate, BEMSimpleLineGraphDelegate,BEMSimpleLineGraphDataSource, UISearchBarDelegate {
 
     var graphView: UIView?;
@@ -42,7 +43,13 @@ class MainTableViewController: UITableViewController, UINavigationControllerDele
 //        self.navigationItem.setLeftBarButtonItems([leftBarButton, space, searchNavBarButton, space, rightBarButton], animated: false)
 //        
 //        searchBar.placeholder = "Search"
-        
+        self.navigationController?.navigationBarHidden = false
+        self.navigationController?.navigationBar.translucent = false
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.barStyle = UIBarStyle.Default
+        self.navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
+        self.navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont.systemFontOfSize(18.0, weight: UIFontWeightUltraLight), NSForegroundColorAttributeName: UIColor.blackColor()]
         self.tableView.showsHorizontalScrollIndicator = false
         self.tableView.showsVerticalScrollIndicator = false
         
@@ -118,6 +125,7 @@ class MainTableViewController: UITableViewController, UINavigationControllerDele
             cell.statLabel.layer.cornerRadius = 8.0
             cell.statLabel.layer.backgroundColor = turquoise.CGColor
             cell.lineGraph.colorLine = turquoise
+            cell.lineGraph.reloadGraph()
         } else {
             let randomValue = Int(arc4random_uniform(UInt32(40)))
             cell.statLabel.text = "\(Float(random + randomValue))%"
@@ -127,6 +135,7 @@ class MainTableViewController: UITableViewController, UINavigationControllerDele
             cell.statLabel.layer.cornerRadius = 8.0
             cell.statLabel.layer.backgroundColor = UIColor(red: 242/255, green: 69/255, blue: 53/255, alpha: 1).CGColor
             cell.lineGraph.colorLine = red
+            cell.lineGraph.reloadGraph()
         }
 
 
@@ -230,6 +239,8 @@ class MainTableViewController: UITableViewController, UINavigationControllerDele
         return true
     }
     */
+    
+
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier != "profile"){
