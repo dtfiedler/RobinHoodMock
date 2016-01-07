@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '3804AD32980939918C091727'
+               BlueprintIdentifier = '904C5E787E1333B56820B5A1'
                BlueprintName = 'Pods-RobinHoodMock'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_RobinHoodMock.framework'>

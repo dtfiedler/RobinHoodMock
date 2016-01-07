@@ -7,6 +7,10 @@ target 'RobinHoodMock' do
     
     pod 'BEMSimpleLineGraph'
     pod 'HMSegmentedControl'
+    pod 'SCRSidewaysBarGraph'
+    pod 'GRKBarGraphView'
+    pod 'JWStackedBarChart'
+    pod 'ZGNavigationBarTitle'
 
 end
 

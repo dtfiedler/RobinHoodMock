@@ -1,13 +1,25 @@
 PODS:
   - BEMSimpleLineGraph (4.1)
+  - GRKBarGraphView (1.1.3)
   - HMSegmentedControl (1.5.2)
+  - JWStackedBarChart (0.1.2)
+  - SCRSidewaysBarGraph (0.0.4)
+  - ZGNavigationBarTitle (0.1.0)
 
 DEPENDENCIES:
   - BEMSimpleLineGraph
+  - GRKBarGraphView
   - HMSegmentedControl
+  - JWStackedBarChart
+  - SCRSidewaysBarGraph
+  - ZGNavigationBarTitle
 
 SPEC CHECKSUMS:
   BEMSimpleLineGraph: 44fd451f27f8e9cf96f2da5bea27603093576dd1
+  GRKBarGraphView: 153ded51b3d9cb450a6aa8a20f018185ab64e56b
   HMSegmentedControl: 83b9686022d2176fb6457d2bdb61e5d6393fed7d
+  JWStackedBarChart: a5357fce51d007ac09251e5ffb9549ec1d4ca09b
+  SCRSidewaysBarGraph: fa680ce0dfece0949bcd0dfd95d57134958fd8e4
+  ZGNavigationBarTitle: d186f1e03be2fd3c01e11a2221e60396142f38f6
 
 COCOAPODS: 0.39.0

@@ -1,0 +1,6 @@
+framework module SCRSidewaysBarGraph {
+  umbrella header "SCRSidewaysBarGraph-umbrella.h"
+
+  export *
+  module * { export * }
+}

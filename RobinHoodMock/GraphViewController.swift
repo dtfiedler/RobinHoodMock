@@ -10,13 +10,10 @@ import UIKit
 import BEMSimpleLineGraph
 import HMSegmentedControl
 
-class GraphViewController: UIViewController, BEMSimpleLineGraphDelegate, BEMSimpleLineGraphDataSource, YSSegmentedControlDelegate {
-
-    @IBOutlet var content: UIView!
+class GraphViewController: UIViewController, BEMSimpleLineGraphDelegate, BEMSimpleLineGraphDataSource {
     
     @IBOutlet var graphView: BEMSimpleLineGraphView!
     
-    @IBOutlet var current: UIView!
     @IBOutlet weak var change: UILabel!
     @IBOutlet weak var pastTime: UILabel!
     @IBOutlet weak var segmentControl: HMSegmentedControl!
@@ -29,9 +26,15 @@ class GraphViewController: UIViewController, BEMSimpleLineGraphDelegate, BEMSimp
     
     var currentValue: Double!
     var relativeChange: Double!
+    var indexPath: NSIndexPath?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.change.hidden = true
+        let rightSwipe = UISwipeGestureRecognizer(target: self, action: Selector("swipeRight:"))
+        
+        rightSwipe.direction = .Left
+        view.addGestureRecognizer(rightSwipe)
         
         //UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.Default, animated: true)
 
@@ -54,6 +57,7 @@ class GraphViewController: UIViewController, BEMSimpleLineGraphDelegate, BEMSimp
         self.segmentControl.selectionIndicatorColor = turquoise
         self.segmentControl.frame = CGRect(x: 0, y: 0, width: 10, height: 50)
         self.segmentControl.titleTextAttributes = [NSFontAttributeName: UIFont.systemFontOfSize(14, weight: UIFontWeightUltraLight)]
+        self.segmentControl.selectedSegmentIndex = 0
         
         //self.segmentControler.tintColor = UIColor.clearColor()
         self.graphView.enableBezierCurve = true
@@ -80,7 +84,7 @@ class GraphViewController: UIViewController, BEMSimpleLineGraphDelegate, BEMSimp
         self.graphView.colorLine = turquoise
         self.graphView.enableTouchReport = true
         pastTime.text = "TODAY"
-        self.segmentControl.selectedSegmentIndex = 0
+        
         self.currentLabel.alpha = 0
         self.change.text = "\(change) (\(relativeChange)%)"
         //var change = percentChange()
@@ -89,9 +93,9 @@ class GraphViewController: UIViewController, BEMSimpleLineGraphDelegate, BEMSimp
     }
     
     override func viewDidAppear(animated: Bool) {
+        self.change.hidden = false
         self.currentLabel.text = data[data.count - 1].description
         self.currentLabel.alpha = 1
-        
         currentValue = data[data.count - 1]
         percentChange()
     }
@@ -220,6 +224,7 @@ class GraphViewController: UIViewController, BEMSimpleLineGraphDelegate, BEMSimp
         }
 
         let current = data[data.count - 1]
+        self.change.text = ""
         var change = (current - relative)
         let relativeChange = (change / relative) * 100.0
         let myString = String.localizedStringWithFormat("%.2f", relativeChange)
@@ -281,18 +286,11 @@ class GraphViewController: UIViewController, BEMSimpleLineGraphDelegate, BEMSimp
     
     @IBAction func dismiss(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
-        self.navigationController?.popViewControllerAnimated(true)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
     
+    func swipeRight(sender:UISwipeGestureRecognizer) {
+    }
+
     //Changing Status Bar
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         

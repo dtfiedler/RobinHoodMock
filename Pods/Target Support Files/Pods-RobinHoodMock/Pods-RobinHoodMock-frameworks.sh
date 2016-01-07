@@ -85,9 +85,17 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-RobinHoodMock/BEMSimpleLineGraph.framework"
+  install_framework "Pods-RobinHoodMock/GRKBarGraphView.framework"
   install_framework "Pods-RobinHoodMock/HMSegmentedControl.framework"
+  install_framework "Pods-RobinHoodMock/JWStackedBarChart.framework"
+  install_framework "Pods-RobinHoodMock/SCRSidewaysBarGraph.framework"
+  install_framework "Pods-RobinHoodMock/ZGNavigationBarTitle.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-RobinHoodMock/BEMSimpleLineGraph.framework"
+  install_framework "Pods-RobinHoodMock/GRKBarGraphView.framework"
   install_framework "Pods-RobinHoodMock/HMSegmentedControl.framework"
+  install_framework "Pods-RobinHoodMock/JWStackedBarChart.framework"
+  install_framework "Pods-RobinHoodMock/SCRSidewaysBarGraph.framework"
+  install_framework "Pods-RobinHoodMock/ZGNavigationBarTitle.framework"
 fi

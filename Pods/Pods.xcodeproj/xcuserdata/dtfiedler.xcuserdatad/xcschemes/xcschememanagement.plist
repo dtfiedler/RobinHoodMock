@@ -9,7 +9,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>GRKBarGraphView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>HMSegmentedControl.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>JWStackedBarChart-JWStackedBarChart.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>JWStackedBarChart.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -19,10 +34,40 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SCRSidewaysBarGraph.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ZGNavigationBarTitle.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>22DE7C11FCBD708AA69F8E6E1C895440</key>
+		<key>19E135F7F571317084595460278A8FC3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>27A709A662C7B378A057EA9EC9F11AF1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2C5B78B58CDE2E7BC18A03D668DE84D7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>32E7E6981065D8F6914B8D890C0F7B5C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5E8793397D3E5AE08F6C6A3F49D79AE5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -33,6 +78,11 @@
 			<true/>
 		</dict>
 		<key>78DD729E6F6BE3C1326232CD5DFFFBB7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9B4291B002D3B06C4CDC50EB7311A436</key>
 		<dict>
 			<key>primary</key>
 			<true/>

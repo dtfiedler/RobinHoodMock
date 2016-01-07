@@ -1,0 +1,6 @@
+framework module JWStackedBarChart {
+  umbrella header "JWStackedBarChart-umbrella.h"
+
+  export *
+  module * { export * }
+}
