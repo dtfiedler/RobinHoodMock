@@ -11,6 +11,7 @@ import UIKit
 class CustomHeaderCell: UITableViewCell {
 
     @IBOutlet weak var headerLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

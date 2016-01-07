@@ -21,6 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.LightContent
         let navBarAppearence = UINavigationBar.appearance()
+        
+
         //UINavigationBar.appearance().translucent = false
         //navBarAppearence.backgroundColor = UIColor(red: 59/255, green: 59/255, blue: 63/255, alpha: 1)
         navBarAppearence.tintColor = turquoise

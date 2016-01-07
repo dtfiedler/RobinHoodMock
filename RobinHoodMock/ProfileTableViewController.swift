@@ -43,7 +43,7 @@ class ProfileTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         switch(section){
         case 0:
-            return 2
+            return 4
         case 1:
             return 3
         case 2:
@@ -67,10 +67,21 @@ class ProfileTableViewController: UITableViewController {
         
         switch (indexPath.section){
         case 0:
-            if (indexPath.row == 0){
+            switch(indexPath.row){
+            case 0:
                 cell.textLabel!.text = "John Smith"
-            } else {
+                break;
+            case 1:
                 cell.textLabel!.text = "1232467890"
+                break
+            case 2:
+                cell.textLabel!.text = "Waukesha Hospital"
+                break
+            case 3:
+                cell.textLabel!.text = "CT/MR/USL"
+                break
+            default:
+                break
             }
             break
         case 1:
@@ -102,7 +113,7 @@ class ProfileTableViewController: UITableViewController {
             break
         }
         
-        cell.textLabel!.font = UIFont.systemFontOfSize(12, weight: UIFontWeightUltraLight)
+        cell.textLabel!.font = UIFont.systemFontOfSize(12, weight: UIFontWeightLight)
 
         
         // Configure the cell...
