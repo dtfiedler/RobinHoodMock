@@ -11,21 +11,24 @@
 @interface JWBarSegment ()
 @property(nonatomic)         int value;
 @property(nonatomic, strong) UIColor *color;
+@property(nonatomic, strong) UIColor *textColor;
 @end
 
 @implementation JWBarSegment
 
-+(JWBarSegment *)barSegmentWithValue:(int)value Color:(UIColor *)color
++(JWBarSegment *)barSegmentWithValue:(int)value Color:(UIColor *)color textColor:(UIColor *)textColor
 {
     JWBarSegment *segment = [[JWBarSegment alloc] init];
     segment.value = value;
     segment.color = color;
+    segment.textColor = textColor;
     return segment;
 }
 
 - (void)dealloc
 {
     self.color = nil;
+    self.textColor = nil;
 }
 @end
 
@@ -74,6 +77,7 @@
         
         UIBezierPath *rectanglePath = isVertical ? [UIBezierPath bezierPathWithRect:CGRectMake(0, offset, self.frame.size.width, dimension)] : [UIBezierPath bezierPathWithRect:CGRectMake(offset, 0, dimension, self.frame.size.height)];
         [segment.color setFill];
+        //[segment.textColor setFill];
         [rectanglePath fill];
         
         NSString *percentString = [NSString stringWithFormat:@"%d%%", segment.value];
@@ -84,12 +88,16 @@
         {
             float startX = stringWidth >= self.frame.size.width ? 0 : (self.frame.size.width - stringWidth)/2;
             float startY = (dimension - stringHeight) / 2;
+            if (offset == 0) {
             [percentString drawAtPoint:CGPointMake(startX, startY + offset) withAttributes:self.attributesDic];
+            }
         }
         else
         {
             float startX = stringWidth >= dimension ? 0 : (dimension - stringWidth)/2;
+            if (offset == 0){
             [percentString drawAtPoint:CGPointMake(startX + offset, (self.frame.size.height - stringHeight)/2) withAttributes:self.attributesDic];
+            }
         }
         
         offset += dimension;

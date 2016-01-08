@@ -10,6 +10,17 @@ import UIKit
 import BEMSimpleLineGraph
 import HMSegmentedControl
 import ZGNavigationBarTitle
+import JWStackedBarChart
+
+        // Horizontal
+        //        JWStackedBarChart *horizontalStackedBar = [[JWStackedBarChart alloc] initWithFrame:CGRectMake(20, 40, 200, 40) IsVertical:NO];
+        //        [self.view addSubview:horizontalStackedBar];
+        //
+        //        horizontalStackedBar.attributesDic = @{NSForegroundColorAttributeName:[UIColor whiteColor], NSFontAttributeName:[UIFont boldSystemFontOfSize:15]};
+        //
+        //        horizontalStackedBar.segmentsArray = @[[JWBarSegment barSegmentWithValue:20 Color:[UIColor blueColor]], [JWBarSegment barSegmentWithValue:30 Color:[UIColor greenColor]], [JWBarSegment barSegmentWithValue:50 Color:[UIColor redColor]]];
+        //        [horizontalStackedBar beginDrawing];
+    
 
 class MainTableViewController: UITableViewController, UINavigationControllerDelegate, BEMSimpleLineGraphDelegate,BEMSimpleLineGraphDataSource, UISearchBarDelegate {
 
@@ -124,17 +135,27 @@ class MainTableViewController: UITableViewController, UINavigationControllerDele
         
         if (indexPath.section == 0){
             let cell = tableView.dequeueReusableCellWithIdentifier("HeaderCell", forIndexPath: indexPath) as! MainHeaderViewCell
-            cell.firstSlider.showCount = false
-            cell.firstSlider.backgroundColor = UIColor.whiteColor()
-            cell.firstSlider.barBackgroundColor = UIColor.whiteColor()
-            cell.firstSlider.yAxisLabels = ["CT", "MR", "USL"]
-            cell.firstSlider.maxXValue = 100
-            cell.firstSlider.labelTextAttributes = [NSFontAttributeName: UIFont.systemFontOfSize(14.0, weight: UIFontWeightUltraLight), NSForegroundColorAttributeName: UIColor.blackColor()]
-            cell.firstSlider.xValues = [90, 70, 100]
-            cell.firstSlider.countTextAttributes = cell.firstSlider.labelTextAttributes
-            cell.firstSlider.barFillColor = turquoise
-        
-            cell.segmentControl.sectionTitles = ["1D", "1M", "3M", "6M", "1YR"]
+
+            for (var i = 1; i < 4; i++){
+                let frame = CGRectMake(100, 50 + 75 * CGFloat(Float(i) * 0.8), 240, 30)
+                let stackedBarChart = JWStackedBarChart(frame: frame, isVertical: false)
+                stackedBarChart.layer.borderWidth = 0.1
+                stackedBarChart.layer.borderColor = UIColor.whiteColor().CGColor
+                stackedBarChart.layer.cornerRadius = 2
+                stackedBarChart.attributesDic = [NSForegroundColorAttributeName: UIColor.whiteColor(), NSFontAttributeName: UIFont.systemFontOfSize(14, weight: UIFontWeightLight)]
+                let value = Int32(arc4random_uniform(100))
+                if (value > 75){
+                    stackedBarChart.segmentsArray = [JWBarSegment(value: value, color: turquoise, textColor: UIColor.whiteColor()), JWBarSegment(value: 100-value, color: UIColor.groupTableViewBackgroundColor(), textColor: UIColor.groupTableViewBackgroundColor())]
+                } else {
+                    stackedBarChart.segmentsArray = [JWBarSegment(value: value, color: red, textColor: UIColor.whiteColor()), JWBarSegment(value: 100-value, color: UIColor.groupTableViewBackgroundColor(), textColor: UIColor.groupTableViewBackgroundColor())]
+                }
+                stackedBarChart.beginDrawing()
+                
+                stackedBarChart.clipsToBounds = true
+                cell.addSubview(stackedBarChart)
+            }
+
+            cell.segmentControl.sectionTitles = ["1M", "3M", "6M", "1YR"]
             cell.segmentControl.tintColor = UIColor.blueColor()
             cell.segmentControl.selectionIndicatorHeight = 1.0
             cell.segmentControl.selectionIndicatorLocation = HMSegmentedControlSelectionIndicatorLocationDown
@@ -143,8 +164,8 @@ class MainTableViewController: UITableViewController, UINavigationControllerDele
             cell.segmentControl.frame = CGRect(x: 0, y: 0, width: 10, height: 50)
             cell.segmentControl.titleTextAttributes = [NSFontAttributeName: UIFont.systemFontOfSize(14, weight: UIFontWeightUltraLight)]
             cell.segmentControl.enabled = true
-            cell.segmentControl.becomeFirstResponder()
-            
+            cell.segmentControl.addTarget(self, action: "segmentControlChanged:", forControlEvents: UIControlEvents.ValueChanged)
+            cell.segmentControl.tag = indexPath.row
             
         }
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! SystemTableViewCell
@@ -210,14 +231,21 @@ class MainTableViewController: UITableViewController, UINavigationControllerDele
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         if (indexPath.section != 0){
-        selectIndexPath = indexPath
-        self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
-        let cell = tableView.cellForRowAtIndexPath(indexPath) as! SystemTableViewCell
-        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main",bundle: nil)
-        let imageViewController = mainStoryboard.instantiateViewControllerWithIdentifier("GraphViewController")
-        nextTitle = cell.systemID.text
-        graphView = imageViewController.view
-        self.performSegueWithIdentifier("graph", sender: self)
+            selectIndexPath = indexPath
+            self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
+            let cell = tableView.cellForRowAtIndexPath(indexPath) as! SystemTableViewCell
+            let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main",bundle: nil)
+            let imageViewController = mainStoryboard.instantiateViewControllerWithIdentifier("GraphViewController")
+            nextTitle = cell.systemID.text
+            graphView = imageViewController.view
+            self.performSegueWithIdentifier("graph", sender: self)
+        } else if(indexPath.section == 0) {
+//            let cell = tableView.cellForRowAtIndexPath(indexPath) as! MainHeaderViewCell
+//            if (cell.segmentControl.selectedSegmentIndex == 3){
+//            cell.segmentControl.selectedSegmentIndex = cell.segmentControl.selectedSegmentIndex + 1
+//            } else {
+//                cell.segmentControl.selectedSegmentIndex = 0
+//            }
         }
     }
     
@@ -256,11 +284,12 @@ class MainTableViewController: UITableViewController, UINavigationControllerDele
        return 90
     }
     
-    @IBAction func segmentedControlValueChanged(sender: AnyObject) {
-        //calculate percent change
+    func segmentControlChanged(sender: UIControl) {
         
-        print("selection made")
-    }
+        if (sender.tag == 0){
+            print("WE DID IT")
+        }
+        }
 
     
 //    func lineGraphDidBeginLoading(graph: BEMSimpleLineGraphView) {

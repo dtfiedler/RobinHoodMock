@@ -9,14 +9,13 @@
 import UIKit
 import SCRSidewaysBarGraph
 import HMSegmentedControl
+import JWStackedBarChart
 
 class MainHeaderViewCell: UITableViewCell {
 
     @IBOutlet weak var cellBackgroundView: UIView!
-    @IBOutlet weak var firstSlider: SCRSidewaysBarGraph!
+    @IBOutlet weak var firstBar: UIView!
     @IBOutlet weak var segmentControl: HMSegmentedControl!
-    @IBOutlet weak var secondSlider: SCRSidewaysBarGraph!
-    @IBOutlet weak var thirdSlider: SCRSidewaysBarGraph!
     
     override func awakeFromNib() {
         super.awakeFromNib()

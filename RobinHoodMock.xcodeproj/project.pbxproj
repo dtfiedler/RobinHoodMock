@@ -16,6 +16,7 @@
 		C4449F341C3D928A006E7876 /* MainHeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4449F331C3D928A006E7876 /* MainHeaderViewCell.swift */; };
 		C4449F361C3D948F006E7876 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4449F351C3D948F006E7876 /* SearchTableViewController.swift */; };
 		C4CB2C841C31BF010002F0BA /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CB2C831C31BF010002F0BA /* ProfileTableViewController.swift */; };
+		C4DE18C91C3F19DF00294130 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DE18C81C3F19DF00294130 /* MyViewController.swift */; };
 		C4DFC1091C2320E60059B2EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DFC1081C2320E60059B2EB /* AppDelegate.swift */; };
 		C4DFC10B1C2320E60059B2EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DFC10A1C2320E60059B2EB /* ViewController.swift */; };
 		C4DFC10E1C2320E70059B2EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4DFC10C1C2320E70059B2EB /* Main.storyboard */; };
@@ -59,6 +60,7 @@
 		C4449F331C3D928A006E7876 /* MainHeaderViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainHeaderViewCell.swift; sourceTree = "<group>"; };
 		C4449F351C3D948F006E7876 /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		C4CB2C831C31BF010002F0BA /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		C4DE18C81C3F19DF00294130 /* MyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 		C4DFC1051C2320E60059B2EB /* RobinHoodMock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RobinHoodMock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4DFC1081C2320E60059B2EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4DFC10A1C2320E60059B2EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				C4DFC1081C2320E60059B2EB /* AppDelegate.swift */,
 				C4DFC10A1C2320E60059B2EB /* ViewController.swift */,
 				C4DFC10C1C2320E70059B2EB /* Main.storyboard */,
+				C4DE18C81C3F19DF00294130 /* MyViewController.swift */,
 				C4E3578F1C3EB5E6000BE04B /* GraphScrollView.swift */,
 				C4E357911C3EC6D7000BE04B /* TestViewController.swift */,
 				C4449F291C3C75D1006E7876 /* CustomHeaderCell.swift */,
@@ -384,6 +387,7 @@
 				C4DFC13C1C2324FB0059B2EB /* SystemTableViewCell.swift in Sources */,
 				C41CE6841C34C64500EB93C3 /* YSSegmentedControl.swift in Sources */,
 				C4449F361C3D948F006E7876 /* SearchTableViewController.swift in Sources */,
+				C4DE18C91C3F19DF00294130 /* MyViewController.swift in Sources */,
 				C40D816C1C319C9E00540C42 /* GraphViewController.swift in Sources */,
 				C4DFC10B1C2320E60059B2EB /* ViewController.swift in Sources */,
 				C4DFC1091C2320E60059B2EB /* AppDelegate.swift in Sources */,

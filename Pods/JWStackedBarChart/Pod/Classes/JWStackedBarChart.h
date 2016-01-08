@@ -10,7 +10,7 @@
 
 @interface JWBarSegment : NSObject
 
-+(JWBarSegment *)barSegmentWithValue:(int)value Color:(UIColor *)color;
++(JWBarSegment *)barSegmentWithValue:(int)value Color:(UIColor *)color textColor:(UIColor *)textColor  ;
 
 @end
 
